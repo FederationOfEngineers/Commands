@@ -8,7 +8,7 @@ function execute(sender, commandName, ...)
     local y = tonumber(args[2])
 
     if x ~= nil and y ~= nil then
-	    if (x > 500 or x < -500) or (y > 500 or y < -500) then
+	    if x > 500 or x < -500 or y > 500 or y < -500 then
 	    	Server():broadcastChatMessage("", 2, "The coordinate values must be between -500 and 500")
 
 	        return 0, "", ""
